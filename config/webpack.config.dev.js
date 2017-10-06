@@ -69,6 +69,7 @@ module.exports = {
       path.resolve(info.absoluteResourcePath).replace(/\\/g, '/')
   },
   resolve: {
+    mainFiles: ['index'],
     // This allows you to set a fallback for where Webpack should look for modules.
     // We placed these paths second because we want `node_modules` to "win"
     // if there are any conflicts. This matches Node resolution mechanism.
