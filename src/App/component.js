@@ -8,10 +8,13 @@ export class component extends Component {
       <div className={styles.App}>
         <header className={styles.AppHeader}>
           <img src={logo} className={styles.AppLogo} alt="logo" />
-          <h1 className={styles.AppTitle}>Welcome to React</h1>
+          <h1 className={styles.AppTitle}>
+            Welcome to the Agile Manifesto (in React)
+          </h1>
         </header>
         <p className={styles.AppIntro}>
-          To get started, edit <code>src/App.js</code> and save to reload.
+          To get started, edit <code>src/App/component.js</code> and save to
+          reload.
         </p>
       </div>
     );
