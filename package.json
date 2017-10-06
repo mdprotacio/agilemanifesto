@@ -1,0 +1,35 @@
+{
+  "name": "agilemanifesto.github.io",
+  "version": "1.0.0",
+  "description": "The Agile Manifesto.",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:rupertrutland/agilemanifesto.git"
+  },
+  "keywords": [
+    "agile",
+    "manifesto",
+    "scrum",
+    "xp",
+    "extreme",
+    "programming",
+    "react"
+  ],
+  "license": "SEE LICENSE IN index.html",
+  "bugs": {
+    "url": "https://github.com/rupertrutland/agilemanifesto/issues"
+  },
+  "homepage": "https://github.com/rupertrutland/agilemanifesto#readme",
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-scripts": "1.0.14"
+  }
+}
