@@ -12,7 +12,13 @@ module.exports = {
       experimentalObjectRestSpread: true
     }
   },
-  extends: ['eslint:recommended', 'plugin:react/recommended', 'prettier'],
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'prettier',
+    'prettier/react',
+    'prettier/standard'
+  ],
   plugins: ['prettier', 'react'],
   rules: {
     'prettier/prettier': 'error'
