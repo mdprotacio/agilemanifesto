@@ -7,7 +7,6 @@ const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
 const WatchMissingNodeModulesPlugin = require('react-dev-utils/WatchMissingNodeModulesPlugin');
 const eslintFormatter = require('react-dev-utils/eslintFormatter');
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const getClientEnvironment = require('./env');
 const paths = require('./paths');
 

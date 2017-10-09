@@ -5,9 +5,10 @@ module.exports = {
     node: true,
     jest: true
   },
+  parser: 'babel-eslint',
   parserOptions: {
     sourceType: 'module',
-    ecmaVersion: 6,
+    ecmaVersion: 7,
     ecmaFeatures: {
       jsx: true,
       experimentalObjectRestSpread: true
@@ -17,8 +18,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:react/recommended',
     'prettier',
-    'prettier/react',
-    'prettier/standard'
+    'prettier/react'
   ],
   plugins: ['prettier', 'react'],
   rules: {

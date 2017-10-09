@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
+// import logo from './logo.svg';
 import styles from './styles.scss';
+// <img width="100" src={logo} alt="logo" />
 
 export class component extends Component {
   render() {
     return (
-      <div className={styles.App}>
-        <header className={styles.AppHeader}>
-          <img src={logo} className={styles.AppLogo} alt="logo" />
-          <h1 className={styles.AppTitle}>
-            Manifesto for Agile Software Development
-          </h1>
+      <div
+        className={styles.manifesto}
+        style={{ flex: 1, overflowY: 'auto', padding: '1.8rem' }}
+      >
+        <header>
+          <h1>Manifesto for Agile Software Development</h1>
         </header>
-        <div className={styles.AppIntro}>
+        <div>
           <p>
             We are uncovering better ways of developing<br />
             software by doing it and helping others do it.<br />
