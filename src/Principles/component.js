@@ -4,7 +4,10 @@ import styles from './styles.scss';
 export class component extends Component {
   render() {
     return (
-      <div className={styles.principles}>
+      <div
+        className={styles.principles}
+        style={{ flex: 1, overflowY: 'auto', padding: '1.8rem' }}
+      >
         <h1>Principles behind the Agile Manifesto</h1>
 
         <p>We follow these principles:</p>

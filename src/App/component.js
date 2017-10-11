@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { Layout, NavDrawer, Panel, AppBar } from 'react-toolbox';
 // import RTLink from 'react-toolbox/lib/Link';
+import { List, ListItem } from 'react-toolbox/lib/list';
 
 import { Manifesto } from '../Manifesto';
 import { Principles } from '../Principles';
@@ -35,12 +36,16 @@ export class component extends Component {
             permanentAt="xxxl"
             onOverlayClick={this.toggleDrawerActive}
           >
-            <p>
-              <Link to="/">Manifesto</Link>
-            </p>
-            <p>
-              <Link to="/principles">Principles</Link>
-            </p>
+            <List selectable ripple>
+              <Link onClick={() => this.toggleDrawerActive()} to="/">
+                Manifesto
+              </Link>
+              <Link onClick={() => this.toggleDrawerActive()} to="/principles">
+                Principles
+              </Link>
+              <ListItem caption="Manifesto" to="/" />
+              <ListItem caption="Principles" to="/principles" />
+            </List>
           </NavDrawer>
           <Panel>
             <AppBar leftIcon="menu" onLeftIconClick={this.toggleDrawerActive} />
