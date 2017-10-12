@@ -37,14 +37,25 @@ export class component extends Component {
             onOverlayClick={this.toggleDrawerActive}
           >
             <List selectable ripple>
-              <Link onClick={() => this.toggleDrawerActive()} to="/">
-                Manifesto
-              </Link>
-              <Link onClick={() => this.toggleDrawerActive()} to="/principles">
-                Principles
-              </Link>
-              <ListItem caption="Manifesto" to="/" />
-              <ListItem caption="Principles" to="/principles" />
+              <ListItem
+                onClick={() => this.toggleDrawerActive()}
+                itemContent={
+                  <Link onClick={() => this.toggleDrawerActive()} to="/">
+                    Manifesto
+                  </Link>
+                }
+              />
+              <ListItem
+                onClick={() => this.toggleDrawerActive()}
+                itemContent={
+                  <Link
+                    onClick={() => this.toggleDrawerActive()}
+                    to="/principles"
+                  >
+                    Principles
+                  </Link>
+                }
+              />
             </List>
           </NavDrawer>
           <Panel>
